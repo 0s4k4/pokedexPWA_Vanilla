@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="manifest" href="./src/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <!-- <link rel="stylesheet" href="./src/css/styles.css" /> -->
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <div class="main-content">
+          <div class="pokedexContainer">
+            <div class="pokedexHeader">
+              <div class="dots-content">
+                <div class="b-dot"></div>
+                <div class="sub-dots">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pokedexContent">
+              <div class="pokedexContent-inside">
+                <div class="screen">
+                  <div class="screen-inside">
+                    <div class="pokemon" id="pokemon"></div>
+                    <img
+                      class="loader"
+                      id="loader"
+                      src="./src/images/pokeball.gif"
+                      alt="gif pokeball"
+                    />
+                    <!-- <div class="lds-ripple" id="loader">
+                      <div></div>
+                      <div></div>
+                    </div> -->
+                  </div>
+                  <div class="controls">
+                    <div class="dots">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                    </div>
+                    <img
+                      src="./src/images/burger-menu.svg"
+                      alt="icon hamburger"
+                    />
+                    <!-- <div class="icon-burger">
+                      <div class="line"></div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="controls-second">
+                  <div class="circle"></div>
+                  <div class="elipsis">
+                    <div class="elipse is-yellow"></div>
+                    <div class="elipse is-dark-blue"></div>
+                  </div>
+                </div>
+                <div class="pokedexControls">
+                  <div class="form-control">
+                    <form id="form-pokemon">
+                      <input
+                        id="search-pokemon"
+                        placeholder="¿Who is that Pokémon?"
+                        type="text"
+                        name="searchPokemon"
+                        aria-label="search pokemos for id or name"
+                      />
+                    </form>
+                  </div>
+                  <div class="buttons-controls">
+                    <button>
+                      <img
+                        src="./src/images/arrow-up.svg"
+                        alt="arrow up icon"
+                      />
+                    </button>
+                    <button id="next">
+                      <img
+                        src="./src/images/arrow-right.svg"
+                        alt="arrow right icon"
+                      />
+                    </button>
+                    <button>
+                      <img
+                        src="./src/images/arrow-down.svg"
+                        alt="arrow down icon"
+                      />
+                    </button>
+                    <button id="prev">
+                      <img
+                        src="./src/images/arrow-left.svg"
+                        alt="arrow left icon"
+                      />
+                    </button>
+                    <span class="helper"></span>
+                  </div>
+                </div>
+                <div class="pokedexDetail">
+                  <p id="description">
+                    Search a Pokémon to know your characteristics
+                  </p>
+                </div>
+              </div>
+              <div class="pokedexContent-screen">
+                <div class="front-screen"></div>
+                <div class="back-screen">
+                  <div class="pokedexChartContent" id="chart-content">
+                    <div class="chart-content" id="content-chart">
+                      <canvas
+                        width="250"
+                        height="250"
+                        id="radar-chart"
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script> -->
+  </body>
+</html>
